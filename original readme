@@ -22,6 +22,8 @@ they create a new temporary file which is later renamed to the original name,
 thus overwriting the synchronization parameters, and making subsequent
 synchronization impossible.
 
+First, install `ntfs-3g-dev` and `libfuse-dev`
+
 For compiling the plugin from source, apply the standard procedure :
         ./configure
         make
