@@ -1,27 +1,30 @@
 # ntfs-3g-onedrive
+
  Reupload of the source of ntfs-3g-onedrive-bin, created by jp-andre
 
 This ntfs-3g pluging solves issues related to the onedrive's reparsing points and allows you to access the onedrive folder from your linux distro.
 
-
 Additional Build instructions:
 
 Install dependencies using your package manager:
+
 ```
-libtool
 fuse
-fuse-libs
+ntfs-3g-dev
+libfuse-dev
 ```
+
 Depending on your system you make need other dependencies that are not listed here.
 
-
 Clone the repository and acess the folder:
+
 ```
 git clone https://github.com/gbrielgustavo/ntfs-3g-onedrive/
 cd ntfs-3g-onedrive
 ```
 
 Then you must config the makefile
+
 ```
 libtoolize --force
 aclocal
@@ -32,6 +35,7 @@ autoconf
 ```
 
 Now you just make and install:
+
 ```
 make
 sudo make install
