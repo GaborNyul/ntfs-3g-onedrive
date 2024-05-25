@@ -82,7 +82,7 @@ struct ONEDRIVE_REPARSE {
 	GUID guid;
 	le16 namelen;			/* Count of ntfschars in name */
 	ntfschar name[1];		/* Optional name (variable length) */
-} ;
+} __attribute__((__packed__)) ;
 
 /*
  *		Get the size and mode of a onedrive directory
